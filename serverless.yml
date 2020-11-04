@@ -10,8 +10,8 @@ provider:
     password: ${env:DOCKER_HUB_PASSWORD}
 
 functions:
-  hello:
-    handler: hello-world.dockerfile
+  select_user_and_recommend:
+    handler: recommender.dockerfile
     context: ./code
     # either use a container image URL for your function `handler` as the commented out `handler`
     # below shows or make sure that you update the application code and corresponding Dockerfile
